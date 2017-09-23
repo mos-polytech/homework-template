@@ -1,4 +1,4 @@
-# mos-polytech
+# mos-polytech [![Build Status](https://travis-ci.org/mos-polytech/homework-template.svg?branch=master)](https://travis-ci.org/mos-polytech/homework-template)
 
 Year: 2017
 
