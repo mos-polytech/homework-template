@@ -4,9 +4,7 @@ python:
   - 3.6
 
 env:
-  - PIPENV_SHELL_COMPAT=true
-  - PIPENV_COLORBLIND=true
-  - PIPENV_NOSPIN=true
+  - PIPENV_SHELL_COMPAT=true PIPENV_COLORBLIND=true PIPENV_NOSPIN=true
 
 install:
   - pip install pipenv
