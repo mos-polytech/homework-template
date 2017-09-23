@@ -3,12 +3,17 @@ language: python
 python:
   - 3.6
 
+env:
+  - PIPENV_SHELL_COMPAT=true
+  - PIPENV_COLORBLIND=true
+  - PIPENV_NOSPIN=true
+
 install:
   - pip install pipenv
-  - pipenv install -d
+  - pipenv install --system -d
 
 script:
-  - pipenv run pytest
+  - pytest
 
 notifications:
   email:
