@@ -15,7 +15,7 @@ def sort(array):
                 Inner loop always lookup for minimum element, even when array is sorted
 
     """
-    for i in range(0, len(array)):
+    for i in range(len(array)):
         min = i
         for j in range(i, len(array)):
             if (array[j] < array[min]):
