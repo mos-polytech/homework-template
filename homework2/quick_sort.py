@@ -6,6 +6,15 @@ from sort_utils import shuffle
 
 
 def sort(array, lo=None, hi=None):
+    '''
+    Quick sort
+    Complexity
+        Memory
+            O(n) - because of using all swap operation in-place and no additional data-structure required
+        Complexity
+            Always O(n*log(n)), where log(n) in base of 2 - because after each recursion calls size of array is divided
+                by two and we need to do n recursion calls
+    '''
     # assume that function will never used like sort(array, lo=1, hi=None)
     if (lo == hi == None):
         # shuffle array to avoid O(n^2) in worst case
