@@ -3,6 +3,4 @@
 
 def swap(array, i, j):
     if (i != j):
-        temp = array[i]
-        array[i] = array[j]
-        array[j] = temp
+        array[i], array[j] = array[j], array[i]
