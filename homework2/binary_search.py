@@ -11,7 +11,7 @@ def search(array, element):
             current_array = current_array[middle:]
         else:
             return middle
-    return -1
+    return None
 
 def _element_absent(array, element):
     return len(array) == 0 or (len(array) == 1 and array[0] != element)

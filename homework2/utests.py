@@ -107,7 +107,7 @@ class InsertionSort(unittest.TestCase):
 class BinarySearch(unittest.TestCase):
     def test_search_empty_array(self):
         array = []
-        self.assertEqual(-1, binary_search(array, 3))
+        self.assertEqual(None, binary_search(array, 3))
 
     def test_search_single_element_array(self):
         array = [1]
@@ -119,7 +119,7 @@ class BinarySearch(unittest.TestCase):
 
     def test_search_when_element_is_not_there(self):
         array = [-3245, -546, -73, -9, 0, 5, 65, 732, 4742]
-        self.assertEqual(-1, binary_search(array, 99))
+        self.assertEqual(None, binary_search(array, 99))
 
 
 if __name__ == '__main__':
