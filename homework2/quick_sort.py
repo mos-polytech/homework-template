@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from sort_utils import swap, shuffle
+from sort_utils import shuffle, swap
 
 
 def sort(array, lo=None, hi=None):
