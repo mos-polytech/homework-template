@@ -39,8 +39,7 @@ class BubbleSort(unittest.TestCase):
     def test_sort_big_arrays(self):
         array = [-992134, 2135, 61, 0, 215, 213952135, -234, 0, 521, 324, 765, 1337, -10, -100, 52]  # noqa: ignore=E501
         bubble_sort(array)
-        self.assertEqual(array, [-992134, -234, -100, -10, 0, 0, 52, 61, 215, 324, 521, 765, 1337, 2135,
-                                 213952135])  # noqa: ignore=E501
+        self.assertEqual(array, [-992134, -234, -100, -10, 0, 0, 52, 61, 215, 324, 521, 765, 1337, 2135, 213952135])  # noqa: ignore=E501
 
 
 class SelectionSort(unittest.TestCase):
@@ -72,8 +71,7 @@ class SelectionSort(unittest.TestCase):
     def test_sort_big_arrays(self):
         array = [-992134, 2135, 61, 0, 215, 213952135, -234, 0, 521, 324, 765, 1337, -10, -100, 52]  # noqa: ignore=E501
         selection_sort(array)
-        self.assertEqual(array, [-992134, -234, -100, -10, 0, 0, 52, 61, 215, 324, 521, 765, 1337, 2135,
-                                 213952135])  # noqa: ignore=E501
+        self.assertEqual(array, [-992134, -234, -100, -10, 0, 0, 52, 61, 215, 324, 521, 765, 1337, 2135, 213952135])  # noqa: ignore=E501
 
 
 class InsertionSort(unittest.TestCase):
@@ -105,8 +103,7 @@ class InsertionSort(unittest.TestCase):
     def test_sort_big_arrays(self):
         array = [-992134, 2135, 61, 0, 215, 213952135, -234, 0, 521, 324, 765, 1337, -10, -100, 52]  # noqa: ignore=E501
         insertion_sort(array)
-        self.assertEqual(array, [-992134, -234, -100, -10, 0, 0, 52, 61, 215, 324, 521, 765, 1337, 2135,
-                                 213952135])  # noqa: ignore=E501
+        self.assertEqual(array, [-992134, -234, -100, -10, 0, 0, 52, 61, 215, 324, 521, 765, 1337, 2135, 213952135])  # noqa: ignore=E501
 
 
 class QuickSort(unittest.TestCase):
@@ -138,8 +135,7 @@ class QuickSort(unittest.TestCase):
     def test_sort_big_arrays(self):
         array = [-992134, 2135, 61, 0, 215, 213952135, -234, 0, 521, 324, 765, 1337, -10, -100, 52]  # noqa: ignore=E501
         quick_sort(array)
-        self.assertEqual(array, [-992134, -234, -100, -10, 0, 0, 52, 61, 215, 324, 521, 765, 1337, 2135,
-                                 213952135])  # noqa: ignore=E501
+        self.assertEqual(array, [-992134, -234, -100, -10, 0, 0, 52, 61, 215, 324, 521, 765, 1337, 2135, 213952135])  # noqa: ignore=E501
 
 
 class BinarySearch(unittest.TestCase):
