@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+
 def search(array, element):
     '''
     Binary search
@@ -8,7 +9,8 @@ def search(array, element):
     Memory
         O(n) - since no additional data structure used
     Time
-        Always Log(n) with base 2 - because after every comparison, length of array divided by 2
+        Always Log(n) with base 2 - because after every comparison,
+        length of array divided by 2
     :param array: sorted (!) number array
     :param element: number to search
     :return: position of element (or None when element is not in array)
@@ -23,6 +25,7 @@ def search(array, element):
         else:
             return middle
     return None
+
 
 def _element_absent(array, element):
     return len(array) == 0 or (len(array) == 1 and array[0] != element)

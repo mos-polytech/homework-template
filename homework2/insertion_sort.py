@@ -9,9 +9,11 @@ def sort(array):
     Selection sort
     Complexity
         Memory
-            O(n) - since all swaps "in place" and no addition data strictures requires
+            O(n) - since all swaps "in place"
+            and no addition data strictures requires
         Time
-            Always O(n^2) - because no matter how array element is placed, second pointer go till the end
+            Always O(n^2) - because no matter how array element is placed,
+            second pointer go till the end
 
     """
     for i in range(len(array)):

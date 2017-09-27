@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from sort_utils import swap
-from sort_utils import shuffle
+from sort_utils import swap, shuffle
 
 
 def sort(array, lo=None, hi=None):
@@ -10,13 +9,15 @@ def sort(array, lo=None, hi=None):
     Quick sort
     Complexity
         Memory
-            O(n) - because of using all swap operation in-place and no additional data-structure required
+            O(n) - because of using all swap operation in-place
+            and no additional data-structure required
         Complexity
-            Always O(n*log(n)), where log(n) in base of 2 - because after each recursion calls size of array is divided
+            Always O(n*log(n)), where log(n) in base of 2
+            because after each recursion calls size of array is divided
                 by two and we need to do n recursion calls
     '''
     # assume that function will never used like sort(array, lo=1, hi=None)
-    if (lo == hi == None):
+    if lo == hi is None:
         # shuffle array to avoid O(n^2) in worst case
         shuffle(array)
         lo = 0
@@ -38,4 +39,3 @@ def _partition(array, lo, hi):
             i += 1
     swap(array, i, hi)
     return i
-

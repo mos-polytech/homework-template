@@ -3,6 +3,7 @@
 
 from random import randint
 
+
 def swap(array, i, j):
     if (i != j):
         array[i], array[j] = array[j], array[i]

@@ -2,11 +2,12 @@
 # -*- coding: utf-8 -*-
 
 import unittest
+
 from bubble_sort import sort as bubble_sort
-from selection_sort import sort as selection_sort
 from insertion_sort import sort as insertion_sort
 from quick_sort import sort as quick_sort
 from binary_search import search as binary_search
+from selection_sort import sort as selection_sort
 
 
 class BubbleSort(unittest.TestCase):
@@ -36,8 +37,10 @@ class BubbleSort(unittest.TestCase):
         self.assertEqual(array, [1])
 
     def test_sort_big_arrays(self):
+        # flake8: ignore=E501
         array = [-992134, 2135, 61, 0, 215, 213952135, -234, 0, 521, 324, 765, 1337, -10, -100, 52]
         bubble_sort(array)
+        # flake8: ignore=E501
         self.assertEqual(array, [-992134, -234, -100, -10, 0, 0, 52, 61, 215, 324, 521, 765, 1337, 2135, 213952135])
 
 
@@ -68,8 +71,10 @@ class SelectionSort(unittest.TestCase):
         self.assertEqual(array, [1])
 
     def test_sort_big_arrays(self):
+        # flake8: ignore=E501
         array = [-992134, 2135, 61, 0, 215, 213952135, -234, 0, 521, 324, 765, 1337, -10, -100, 52]
         selection_sort(array)
+        # flake8: ignore=E501
         self.assertEqual(array, [-992134, -234, -100, -10, 0, 0, 52, 61, 215, 324, 521, 765, 1337, 2135, 213952135])
 
 
@@ -100,8 +105,10 @@ class InsertionSort(unittest.TestCase):
         self.assertEqual(array, [1])
 
     def test_sort_big_arrays(self):
+        # flake8: ignore=E501
         array = [-992134, 2135, 61, 0, 215, 213952135, -234, 0, 521, 324, 765, 1337, -10, -100, 52]
         insertion_sort(array)
+        # flake8: ignore=E501
         self.assertEqual(array, [-992134, -234, -100, -10, 0, 0, 52, 61, 215, 324, 521, 765, 1337, 2135, 213952135])
 
 
@@ -132,8 +139,10 @@ class QuickSort(unittest.TestCase):
         self.assertEqual(array, [1])
 
     def test_sort_big_arrays(self):
+        # flake8: ignore=E501
         array = [-992134, 2135, 61, 0, 215, 213952135, -234, 0, 521, 324, 765, 1337, -10, -100, 52]
         quick_sort(array)
+        # flake8: ignore=E501
         self.assertEqual(array, [-992134, -234, -100, -10, 0, 0, 52, 61, 215, 324, 521, 765, 1337, 2135, 213952135])
 
 
