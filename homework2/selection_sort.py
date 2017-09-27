@@ -7,7 +7,7 @@ def selection_sort(array):
     for i in range(len(array) - 1):
         min_element = i
 
-        for j in range(i+1, len(array)):
+        for j in range(i + 1, len(array)):
             if array[j] < array[min_element]:
                 min_element = j
 

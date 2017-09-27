@@ -18,14 +18,14 @@ def quick_sort(array, bottom=None, top=None):
 
     delimiter = partition(array, bottom=bottom, top=top)
 
-    quick_sort(array, bottom=bottom, top=delimiter-1)
-    quick_sort(array, bottom=delimiter+1, top=top)
+    quick_sort(array, bottom=bottom, top=delimiter - 1)
+    quick_sort(array, bottom=delimiter + 1, top=top)
 
 
 def partition(array, bottom=None, top=None):
     support_index = bottom
 
-    for i in range(bottom, top+1):
+    for i in range(bottom, top + 1):
         if array[i] < array[top]:
             array[i], array[support_index] = array[support_index], array[i]
             support_index += 1
@@ -33,6 +33,7 @@ def partition(array, bottom=None, top=None):
     array[top], array[support_index] = array[support_index], array[top]
 
     return support_index
+
 
 if __name__ == '__main__':
     arr = [7, 2, 1, 4, 8, 9, 5, 3]
