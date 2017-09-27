@@ -35,6 +35,6 @@ def partition(array, bottom=None, top=None):
     return support_index
 
 if __name__ == '__main__':
-    arr = [7, 2, 1, 4, 8, 9, 5]
+    arr = [7, 2, 1, 4, 8, 9, 5, 3]
     quick_sort(arr)
     print(arr)
