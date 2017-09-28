@@ -1,15 +1,15 @@
-#Сортировка выборкой
+# Сортировка выборкой
 massive = [4, 3, 2, -5, 3, 8, 32, 54, 83, -23, 43]
-imaxnow = 0
-while imaxnow < len(massive) - 1:
-    min = imaxnow
-    i = imaxnow + 1
+max_element = 0
+while max_element < len(massive) - 1:
+    min_element = max_element
+    i = max_element + 1
     while i < len(massive):
-        if massive[i] < massive[min]:
-            min = i
+        if massive[i] < massive[min_element]:
+            min_element = i
         i += 1
-    massive[imaxnow], massive[min] = massive[min], massive[imaxnow]
-    imaxnow += 1
+    massive[max_element], massive[min_element] = massive[min_element], massive[max_element]
+    max_element += 1
 
 print(massive)
 
