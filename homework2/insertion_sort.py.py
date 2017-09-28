@@ -8,3 +8,6 @@ for i in range(len(arr)):
             index = index - 1
             arr[index] = num
 print(arr)
+
+# Сложность O(n * n)
+# Мы перебираем все элементы массива и вставляем в отсортированную часть
