@@ -13,7 +13,7 @@ This package contains an example homework for our students.
 ## How to submit a homework
 
 1. Create a fork of this repository
-2. Create a new brunch named `feature-homework-${NUMBER}` (this number should equal to the homework's number)
+2. Create a new branch named `feature-homework-${NUMBER}` (this number should equal to the homework's number)
 3. Register on [`travis`](https://travis-ci.org/)
 4. [Enable](https://docs.travis-ci.com/user/getting-started/) your repo on `travis`
 5. Create pull request to *your* `master` branch from *your* `feature-homework-${NUMBER}` branch
@@ -21,6 +21,7 @@ This package contains an example homework for our students.
 7. Then post a link to our [`gitter`](https://gitter.im/sobolevn/mos-polytech) channel
 8. Your homework will be reviewed
 
+If you have any problem with submission see [tutorial](how-to-submit-hw.md) or ask question in [`gitter`](https://gitter.im/sobolevn/mos-polytech) channel
 
 ## Requirements
 
