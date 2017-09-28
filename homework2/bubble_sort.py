@@ -1,8 +1,8 @@
-list = [1, 5, 6, 7, 1, 0, 10, 15]
+num_list = [1, 5, 6, 7, 1, 0, 10, 15]
 n = 1
-while n < len(list):
-    for i in range(len(list) - n):
-	    if list[i] > list[i + 1]:
-		    list[i], list[i + 1] = list[i + 1], list[i]
-		    print(list)
+while n < len(num_list):
+    for i in range(len(num_list) - n):
+	    if num_list[i] > num_list[i + 1]:
+		    num_list[i], num_list[i + 1] = num_list[i + 1], num_list[i]
+		    print(num_list)
     n += 1	
