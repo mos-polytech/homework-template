@@ -1,10 +1,10 @@
-list = [5,52,3,1,9,6,7,]
-print(list)
-for i in range(len(list)):
-        num = list[i]
+arr = [5, 52, 3, 1, 9, 6, 7,]
+print(arr)
+for i in range(len(arr)):
+        num = arr[i]
         index = i;
-        while (list[index-1] > num) and (index > 0):
-            list[index] = list[index-1]
+        while (arr[index - 1] > num) and (index > 0):
+            arr[index] = arr[index - 1]
             index = index - 1
-        list[index] = num
-print(list)
+            arr[index] = num
+print(arr)
