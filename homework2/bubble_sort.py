@@ -6,13 +6,12 @@
 
 
 def bubble_sort(array):
-
     for i in range(len(array) - 1):
         for j in range(len(array) - i - 1):
-            if array[j] > array[j+1]:
+            if array[j] > array[j + 1]:
                 a = array[j]
-                array[j] = array[j+1]
-                array[j+1] = a
+                array[j] = array[j + 1]
+                array[j + 1] = a
 
 
 if __name__ == '__main__':
