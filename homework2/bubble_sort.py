@@ -8,5 +8,7 @@ def bubble_sort(arr):
                     i += 1
                     j += 1
     print(arr)
+
+
 arr = [4, 3, 8, 5, 5, 2]
 bubble_sort(arr)

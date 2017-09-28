@@ -10,5 +10,6 @@ def selection_sort(arr):
                 i += 1
         print(arr)
 
+
 arr = [3, 4, 9, 4, 23, 8, 7]
 selection_sort(arr)
