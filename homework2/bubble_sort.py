@@ -1,12 +1,12 @@
-list = [4, 1, 5, 2, -2]
+lis = [4, 1, 5, 2, -2]
 j = 1
-while j < len(list):
-    for i in range(len(list) - j):
-        if list[i] > list[i + 1]:
-            list[i], list[i + 1] = list[i + 1], list[i]
+while j < len(lis):
+    for i in range(len(lis) - j):
+        if lis[i] > lis[i + 1]:
+            lis[i], lis[i + 1] = lis[i + 1], lis[i]
     j = j + 1
 
-print (list)
+print (lis)
 
 # Сложность O(n * n)
 # Постоянное сравнение элементов

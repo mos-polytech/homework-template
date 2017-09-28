@@ -1,18 +1,18 @@
-list = [2, 1, 0, -1, 3]
+lis = [2, 1, 0, -1, 3]
 j = 0
-while j < len(list) - 1:
+while j < len(lis) - 1:
     m = j
     i = j + 1
-    while i < len(list):
-        if list[i] < list[m]:
+    while i < len(lis):
+        if lis[i] < lis[m]:
             m = i
         i += 1
-    t = list[j]
-    list[j] = list[m]
-    list[m] = t
+    t = lis[j]
+    lis[j] = lis[m]
+    lis[m] = t
     j += 1
 
-print(list)
+print(lis)
 
 # Сложность O(n * n)
 # Ицем наименьший элемент и меняем его с

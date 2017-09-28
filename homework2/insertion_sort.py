@@ -1,13 +1,13 @@
-list = [5, 0, 3, -1, 4]
+lis = [5, 0, 3, -1, 4]
 
-for i in range(1, len(list)):
-    t = list[i]
+for i in range(1, len(lis)):
+    t = lis[i]
     item = i - 1
-    while item >= 0 and list[item] > t:
-        list[item + 1], list[item] = list[item], t
+    while item >= 0 and lis[item] > t:
+        lis[item + 1], lis[item] = lis[item], t
         item -= 1
 
-print(list)
+print(lis)
 
 # Сложность O(n ** 2)
 # Каждый элемент из массива берется и вставляется
