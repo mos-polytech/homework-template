@@ -1,4 +1,4 @@
-def BinSearch (lis, x):
+def binsearch(lis, x):
     i = 0
     j = len(lis) - 1
     m = int(j / 2)
@@ -15,8 +15,8 @@ def BinSearch (lis, x):
 
 
 lis = [0, 1, 2, 5, 10, 15, 20, 25, 40, 45]
-x = int(input("Введите число: "))
-print('Число:', x, '| Индекс:', BinSearch(lis, x))
+x = int(input('Введите число: '))
+print('Число:', x, '| Индекс:', binsearch(lis, x))
 
 # Довольно много времени потратил, чтобы самому написать, но так и не
 # получилось. Взял код из googl'а, но как он работает я понял.
