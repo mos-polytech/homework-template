@@ -1,5 +1,5 @@
 arr = [10, 5, 3, 0, 8, ]
-print (arr)
+print(arr)
 first = 0
 while first < len(arr) - 1:
     mini = first
