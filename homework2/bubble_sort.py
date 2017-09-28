@@ -6,7 +6,7 @@ while j < len(lis):
             lis[i], lis[i + 1] = lis[i + 1], lis[i]
     j = j + 1
 
-print (lis)
+print(lis)
 
 # Сложность O(n * n)
 # Постоянное сравнение элементов
