@@ -5,7 +5,7 @@ for i in range(1, len(mass)):
     j = i - 1
     while j >= 0:
         if a < mass[j]:
-            mass[j+1] = mass[j]
+            mass[j + 1] = mass[j]
             mass[j] = a
             j = j - 1
         else:
