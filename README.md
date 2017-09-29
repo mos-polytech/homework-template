@@ -13,6 +13,8 @@ This package contains an example homework for our students.
 ## How to submit a homework
 
 1. Create a fork of this repository
+1.1 If fork already exists, [sync](https://help.github.com/articles/syncing-a-fork/) it
+1.2 If you have any approved pull-requests, merge them into `master`
 2. Create a new brunch named `feature-homework-${NUMBER}` (this number should equal to the homework's number)
 3. Register on [`travis`](https://travis-ci.org/)
 4. [Enable](https://docs.travis-ci.com/user/getting-started/) your repo on `travis`
@@ -39,7 +41,6 @@ If you ever wish to run our tests locally you will need:
 Then execute:
 
 - `pipenv install -d`
-- `pipenv shell`
-- `pytest`
+- `pipenv run python -m pytest`
 
 You are all done.

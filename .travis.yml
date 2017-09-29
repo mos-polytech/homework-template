@@ -8,10 +8,10 @@ env:
 
 install:
   - pip install pipenv
-  - pipenv install --system -d
+  - pipenv install --system --deploy -d
 
 script:
-  - pytest
+  - pipenv run python -m pytest
 
 notifications:
   email:
