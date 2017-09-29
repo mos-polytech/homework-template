@@ -27,8 +27,8 @@ We work in a single repository, if you have ever created one, stick to it. There
 
 ### Updating existing repository
 
-1. If your fork already exists, [sync](https://help.github.com/articles/syncing-a-fork/) it with the [this](https://github.com/mos-polytech/homework-template) repository
-2. If you have any approved pull-requests for your previous homeworks, merge them into `master`
+1. If your fork already exists, [sync](https://help.github.com/articles/syncing-a-fork/) it with [this](https://github.com/mos-polytech/homework-template) repository
+2. If you have any approved pull-requests for your previous homeworks, merge them into your `master` branch
 
 ### Getting help
 
