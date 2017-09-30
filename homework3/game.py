@@ -84,7 +84,7 @@ def perform_move(field, key):
     if mark_position in [0, 4, 8, 12] and key == 'a':
         raise IndexError()
     # right move restrictions
-    if mark_position in [3, 7, 11, 15] and key == 'b':
+    if mark_position in [3, 7, 11, 15] and key == 'd':
         raise IndexError()
     field_new = list(field)
     field_new[mark_position], field_new[next_mark_position] =\
