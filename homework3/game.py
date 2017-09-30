@@ -33,6 +33,7 @@ def is_game_finished(field):
     else:
         return(False)
 
+
 def perform_move(field, key):
     index = 0
 
@@ -53,29 +54,29 @@ def perform_move(field, key):
 
 
 def handle_user_input():
-   user_decision = input('Управляйте игрой с помощью W,A,S и D. Ваш ход: ')
-   while user_decision not in MOVES:
-       print ('Ошибка!')
-       user_decision = input('Управляйте игрой с помощью W,A,S и D. Ваш ход: ')
-   else:
-       return (MOVES[user_decision])
+    user_decision = input('Управляйте игрой с помощью W,A,S и D. Ваш ход: ')
+    while user_decision not in MOVES:
+        print ('Ошибка!')
+        user_decision = input('Управляйте игрой с помощью W,A,S и D. Ваш ход: ')
+    else:
+        return (MOVES[user_decision])
 
 
 def main():
-   print('Начало игры!')
-   first_field= shuffle_field()
-   print_field(first_field)
-   count = 0
-   while not(is_game_finished(first_field)):
-       key = handle_user_input()
-       nwe_one_field = (perform_move(first_field, key))
-       if nwe_one_field is False:
-           print('Вы не можете так ходить!')
-       else:
-           first_field = nwe_one_field
-           print_field(first_field)
-           count +=1
-   print('Поздравляем! ВЫ ВЫИГРАЛИ! Количество ходов :', count)
+    print('Начало игры!')
+    first_field= shuffle_field()
+    print_field(first_field)
+    count = 0
+    while not(is_game_finished(first_field)):
+        key = handle_user_input()
+        nwe_one_field = (perform_move(first_field, key))
+        if nwe_one_field is False:
+            print('Вы не можете так ходить!')
+        else:
+            first_field = nwe_one_field
+            print_field(first_field)
+            count +=1
+    print('Поздравляем! ВЫ ВЫИГРАЛИ! Количество ходов :', count)
 
 
 
