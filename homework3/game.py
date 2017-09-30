@@ -75,7 +75,7 @@ def main():
            first_field = nwe_one_field
            print_field(first_field)
            count +=1
-   print('Поздравляем! ВЫ ВЫИГРАЛИ! Количество ходов:', count)
+   print('Поздравляем! ВЫ ВЫИГРАЛИ! Количество ходов :', count)
 
 
 
