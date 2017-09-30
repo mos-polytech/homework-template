@@ -12,7 +12,7 @@ def sort(array):
             O(n) - since all swaps "in place"
             and no addition data strictures requires
         Time
-            Always O(n)
+            Always O(n^2)
                 Inner loop always lookup for minimum element,
                 even when array is sorted
 

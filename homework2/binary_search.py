@@ -3,7 +3,7 @@
 
 
 def search(array, element):
-    '''
+    """
     Binary search
     Complexity
     Memory
@@ -14,7 +14,7 @@ def search(array, element):
     :param array: sorted (!) number array
     :param element: number to search
     :return: position of element (or None when element is not in array)
-    '''
+    """
     current_array = array
     while not _element_absent(current_array, element):
         middle = len(current_array) // 2
