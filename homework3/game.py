@@ -123,7 +123,7 @@ def main():
             field = perform_move(field, move)
             counter += 1
         except IndexError:
-            print('Is is impossible move')
+            print('It is impossible move')
     print('Nice one, you win!')
     print('Number of moves you make: ', counter)
     print_field(field)
