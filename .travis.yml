@@ -7,11 +7,11 @@ env:
   - PIPENV_SHELL_COMPAT=true PIPENV_COLORBLIND=true PIPENV_NOSPIN=true
 
 install:
-  - pip install pipenv
+  - pip install 'pipenv==8.1.3'
   - pipenv install --system -d
 
 script:
-  - pytest
+  - python -m pytest
 
 notifications:
   email:
