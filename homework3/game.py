@@ -56,15 +56,15 @@ def perform_move(field, key):
 def handle_user_input():
     user_decision = input('Управляйте игрой с помощью W,A,S и D. Ваш ход: ')
     while user_decision not in MOVES:
-        print ('Ошибка!')
+        print('Ошибка!')
         user_decision = input('Управляйте игрой с помощью W,A,S и D. Ваш ход: ')
     else:
-        return (MOVES[user_decision])
+        return(MOVES[user_decision])
 
 
 def main():
     print('Начало игры!')
-    first_field= shuffle_field()
+    first_field = shuffle_field()
     print_field(first_field)
     count = 0
     while not(is_game_finished(first_field)):
@@ -75,13 +75,8 @@ def main():
         else:
             first_field = nwe_one_field
             print_field(first_field)
-            count +=1
+            count += 1
     print('Поздравляем! ВЫ ВЫИГРАЛИ! Количество ходов :', count)
-
-
-
-
-
 
 if __name__ == '__main__':
     # See what this means:
