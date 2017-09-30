@@ -115,14 +115,17 @@ def main():
     :return: None
     """
     field = shuffle_field()
+    counter = 0
     while not is_game_finished(field):
         print_field(field)
         move = handle_user_input()
         try:
             field = perform_move(field, move)
+            counter += 1
         except IndexError:
             print('Is is impossible move')
     print('Nice one, you win!')
+    print('Number of moves you make: ', counter)
     print_field(field)
 
 
