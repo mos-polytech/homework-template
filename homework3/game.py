@@ -78,6 +78,7 @@ def main():
             count += 1
     print('Поздравляем! ВЫ ВЫИГРАЛИ! Количество ходов :', count)
 
+
 if __name__ == '__main__':
     # See what this means:
     # http://stackoverflow.com/questions/419163/what-does-if-name-main-do
