@@ -49,7 +49,7 @@ def print_field(field):
     n = 4
     print('------------------------')
     for i in range(0, len(field), n):
-        prepared_line = ["{:2s}".format(str(x)) for x in field[i:i + n]]
+        prepared_line = ['{:2s}'.format(str(x)) for x in field[i:i + n]]
         print(prepared_line)
     print('------------------------')
 
@@ -87,7 +87,8 @@ def perform_move(field, key):
     if mark_position in [3, 7, 11, 15] and key == 'b':
         raise IndexError()
     field_new = list(field)
-    field_new[mark_position], field_new[next_mark_position] = field_new[next_mark_position], field_new[mark_position]
+    field_new[mark_position], field_new[next_mark_position] =\
+        field_new[next_mark_position], field_new[mark_position]
     return field_new
 
 
@@ -103,7 +104,7 @@ def handle_user_input():
     allowed_moves = list(MOVES.keys())
     move = ''
     while move not in allowed_moves:
-        move = input("Next move (use wasd for control) \n")
+        move = input('Next move (use wasd for control) \n')
     return move
 
 
@@ -120,8 +121,8 @@ def main():
         try:
             field = perform_move(field, move)
         except IndexError:
-            print("Is's impossible move")
-    print("Nice one, you win!")
+            print('Is is impossible move')
+    print('Nice one, you win!')
     print_field(field)
 
 
@@ -131,4 +132,4 @@ if __name__ == '__main__':
     try:
         main()
     except KeyboardInterrupt:
-        print("shutting down")
+        print('shutting down')
