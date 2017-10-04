@@ -1,11 +1,7 @@
+#coding: utf-8
+#In[ ]:
 
-# coding: utf-8
-
-# In[ ]:
-
-
-
-# `random` module is used to shuffle field, see:
+#`random` module is used to shuffle field, see:
 # https://docs.python.org/3/library/random.html#random.shuffle
 import random
 
@@ -97,14 +93,6 @@ def perform_move(field, key):
 
 
 def handle_user_input():
-    """
-    Handles user input. List of accepted moves:
-        'w' - up,
-        's' - down,
-        'a' - left,
-        'd' - right
-    :return: <str> current move.
-    """
     allowed_moves = list(MOVES.keys())
     move = ''
     while move not in allowed_moves:
