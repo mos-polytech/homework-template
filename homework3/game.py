@@ -77,18 +77,18 @@ def perform_move(field, key):
     :return: new field state (after the move).
     :raises: IndexError if the move can't me done.
     """
-    mark_position = field.index(EMPTY_MARK)
-    p = mark_position + MOVES[key]
+    mark_pos = field.index(EMPTY_MARK)
+    p = mark_pos + MOVES[key]
     if not (0 < p < len(field)):
         raise IndexError()
     # left move restrictions
-    if mark_position in [0, 4, 8, 12] and key == 'a':
+    if mark_pos in [0, 4, 8, 12] and key == 'a':
         raise IndexError()
     # right move restrictions
-    if mark_position in [3, 7, 11, 15] and key == 'd':
+    if mark_pos in [3, 7, 11, 15] and key == 'd':
         raise IndexError()
     field_new = list(field)
-    field_new[mark_position], field_new[p] = field_new[p], field_new[mark_position]
+    field_new[mark_pos], field_new[p] = field_new[p], field_new[mark_pos]
     return field_new
 
 
