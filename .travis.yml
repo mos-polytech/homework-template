@@ -7,9 +7,8 @@ env:
   - PIPENV_SHELL_COMPAT=true PIPENV_COLORBLIND=true PIPENV_NOSPIN=true
 
 install:
-  - pip install 'pipenv==8.1.3'
+  - pip install pipenv
   - pipenv install --system -d
-  #sddsf
 
 script:
   - pytest
