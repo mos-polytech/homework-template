@@ -1,5 +1,10 @@
+
 # coding: utf-8
+
 # In[ ]:
+
+
+
 # `random` module is used to shuffle field, see:
 # https://docs.python.org/3/library/random.html#random.shuffle
 import random
@@ -15,6 +20,7 @@ MOVES = {
     'a': -1,
     'd': 1,
 }
+
 
 def shuffle_field():
     """
@@ -38,6 +44,7 @@ def shuffle_field():
 
     return field
 
+
 def print_field(field):
     """
     This method prints field to user.
@@ -51,6 +58,7 @@ def print_field(field):
         print(prepared_line)
     print('------------------------')
 
+
 def is_game_finished(field):
     """
     This method checks if the game is finished.
@@ -63,6 +71,7 @@ def is_game_finished(field):
         if field[i - 1] > field[i]:
             return False
     return True
+
 
 def perform_move(field, key):
     """
@@ -86,6 +95,7 @@ def perform_move(field, key):
     field_new[mark_position], field_new[next_mark_position] =        field_new[next_mark_position], field_new[mark_position]
     return field_new
 
+
 def handle_user_input():
     """
     Handles user input. List of accepted moves:
@@ -100,6 +110,7 @@ def handle_user_input():
     while move not in allowed_moves:
         move = input('Next move (use wasd for control) \n')
     return move
+
 
 def main():
     """
@@ -121,6 +132,7 @@ def main():
     print('Number of moves you make: ', counter)
     print_field(field)
 
+
 if __name__ == '__main__':
     # See what this means:
     # http://stackoverflow.com/questions/419163/what-does-if-name-main-do
@@ -129,4 +141,8 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         print('shutting down')
 
+
 # In[ ]:
+
+
+
