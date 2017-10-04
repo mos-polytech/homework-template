@@ -78,8 +78,8 @@ def perform_move(field, key):
     :raises: IndexError if the move can't me done.
     """
     mark_position = field.index(EMPTY_MARK)
-    next_position = mark_position + MOVES[key]
-    if not (0 < next_position < len(field)):
+    position = mark_position + MOVES[key]
+    if not (0 < position < len(field)):
         raise IndexError()
     # left move restrictions
     if mark_position in [0, 4, 8, 12] and key == 'a':
@@ -88,7 +88,7 @@ def perform_move(field, key):
     if mark_position in [3, 7, 11, 15] and key == 'd':
         raise IndexError()
     field_new = list(field)
-    field_new[mark_position], field_new[next_position] = field_new[next_position], field_new[mark_position]
+    field_new[mark_position], field_new[position] = field_new[position], field_new[mark_position]
     return field_new
 
 
