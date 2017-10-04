@@ -89,7 +89,7 @@ def perform_move(field, key):
         raise IndexError()
     field_new = list(field)
     field_new[mark_position], field_new[next_mark_position] = \ 
-		field_new[next_mark_position], field_new[mark_position]
+	field_new[next_mark_position], field_new[mark_position]
     return field_new
 
 
