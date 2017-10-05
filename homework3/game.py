@@ -93,7 +93,7 @@ def handle_user_input():
     allowed_moves = list(MOVES.keys())
     move = ''
     while move not in allowed_moves:
-        move = input('--------------------------\nUse ("w", "s", "a", "d")\n--------------------------\n')
+        move = input('Use ("w", "s", "a", "d")\n')
     return move
 
 
