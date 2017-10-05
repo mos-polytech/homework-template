@@ -35,11 +35,11 @@ def is_game_finished(field):  # игра закончен
 def perform_move(fields, keys):
     move_key = MOVES[keys]
     index = fields.index('x')
-    if ((index >= 0 and index < 4 and keys == 'w'):
+    if (index >= 0 and index < 4 and keys == 'w'):
         print('Выход за  границы')
-    elif (index >= 12 and index < 16 and keys == 's')
-        print('Выход за границы')    
-    elif ((index % 4 == 0 or index == 0) and keys == 'a')):
+    elif (index >= 12 and index < 16 and keys == 's'):
+        print('Выход за границы')
+    elif ((index % 4 == 0 or index == 0) and keys == 'a'):
         print('Выход за границы')
     elif ((index + 1) % 4 == 0 and keys == 'd'):
         print('Выход за границы')
