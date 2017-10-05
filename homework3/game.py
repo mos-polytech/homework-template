@@ -5,7 +5,7 @@ import random
 # import sys
 
 EMPTY_MARK = 'x'  # переменная с х
-MOVES = {'w': -4, 's': 4, 'a': -1, 'd': 1,}
+MOVES = {'w': -4, 's': 4, 'a': -1, 'd': 1, }
 
 
 def shuffle_field():
@@ -17,30 +17,34 @@ def shuffle_field():
     return number_for_games  # возвращаем значени
 
 
-def print_field(number_field):
+def print_field(fields):
     j = 0 
-    while j < len(number_field): 
-        print(number_field[j], number_field[j + 1], number_field[j + 2], number_field[j + 3])
-        j+=4
+    while j < len(fields): 
+        print(fields[j], fields[j + 1], fields[j + 2], fields[j + 3])
+        j + = 4
         
         
-def is_game_finished(field):  # игра закончена
-    wins_checks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 'x'] 
-    if field == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 'x'] :  
-        return  True  # возвращаем тру
+def is_game_finished(field):  # игра закончен
+    wins_checks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 'x']
+    if field == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 'x']: 
+        return True  # возвращаем тру
     elif field == wins_checks:  # Если иначе равен
         return True
     else:
         return False
     
     
-def perform_move(fields,keys):
+def perform_move(fields, keys):
     move_key = MOVES[keys]
     index = fields.index('x')
-    if ((index >= 0 and index < 4 and keys == 'w') or ((index % 4 == 0 or index == 0) and keys == 'a')):
+    if ((index >= 0 and index < 4 and keys == 'w'):
         print('Выход за  границы')
-    elif  (index >= 12 and index < 16 and keys == 's') or((index + 1) % 4 == 0 and keys == 'd'):
-        print('Выход за боковые границы')
+    elif (index >= 12 and index < 16 and keys == 's')
+        print('Выход за границы')    
+    elif ((index % 4 == 0 or index == 0) and keys == 'a')):
+        print('Выход за границы')
+    elif ((index + 1) % 4 == 0 and keys == 'd'):
+        print('Выход за границы')
     else:
          location = fields.index('x')
          move_key = MOVES[keys]
