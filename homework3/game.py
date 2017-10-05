@@ -76,7 +76,7 @@ def main():
                     print('shutting down')
                     break
                 elif handle == 'cheat':
-                    cheat = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 'x']
+                    chet = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 'x']
                 if(is_game_finished(cheat)):
                     print('Вы воспользовались читом')
                     print_field(cheat)
