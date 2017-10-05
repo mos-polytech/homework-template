@@ -83,5 +83,5 @@ def main():
             print('Неверные данные попробуйте еще раз:')
     while is_game_finished(result_number) == True:
         print('Поздравляем вы выиграли:')
-        break    
+        break  
 main()
