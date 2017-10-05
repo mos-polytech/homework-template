@@ -93,7 +93,7 @@ def handle_user_input():
     allowed_moves = list(MOVES.keys())
     move = ''
     while move not in allowed_moves:
-        move = input('Next move \n')
+        move = input('Следующий шаг \n')
     return move
 
 
@@ -112,9 +112,9 @@ def main():
             field = perform_move(field, move)
             counter += 1
         except IndexError:
-            print('It is impossible move')
-    print('You won!')
-    print('Number of moves you make: ', counter)
+            print('Такой ход невозможно сделать')
+    print('Вы выиграли!')
+    print('Количество шагов: ', counter)
     print_field(field)
 
 
