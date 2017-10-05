@@ -22,6 +22,6 @@ def _patch_user_input(obj, value):
 
 
 def test_right_input():
-    with _patch_user_input(game, 'w'):
+    with _patch_user_input(my_game, 'w'):
         move = handle_user_input()
     assert move == 'w'
