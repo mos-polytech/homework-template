@@ -25,22 +25,28 @@ def shuffle_field():
     return number_for_games  # возвращаем значени
 
 
-def print_field(number_for_games):
+def print_field(number_field):
     j = 0  # задаем цикл
      # Задаем цикл где J меньше массива numbers_for games
     while j < len(number_for_games): 
         # Печатаем матрицу 4 на 4
-        print(number_for_games[j], number_for_games[j + 1], number_for_games[j + 2], number_for_games[j + 3])  
+        print(number_field[j], number_field[j + 1], number_field[j + 2], number_field[j + 3])  
         j+=4
+        
+        
 def is_game_finished(number_for_games):  # игра закончена
     # number_for_games.index('x')
-    wins_checks = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,'x']  # выйгрышная комбинация
-    if number_for_games == [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,'x'] :  #  если массив равен выйграшной комбинации
+    # выйгрышная комбинация
+    wins_checks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 'x'] 
+    # если массив равен выйграшной комбинации
+    if number_for_games == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 'x'] :  
         return  True  # возвращаем тру
     elif number_for_games == wins_checks:  # Если иначе равен
         return True
     else:
         return False
+    
+    
 def perform_move(number_for_games,keys):
     move_key = MOVES[keys]
     index = number_for_games.index('x')
@@ -73,7 +79,7 @@ def main():
             print('shutting down')
             break
         elif handle == 'cheat':
-            cheat = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,'x']
+            cheat = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 'x']
             if(is_game_finished(cheat)):
                 print('Вы воспользовались читом')
                 print_field(cheat)
