@@ -2,7 +2,7 @@
 
 import random
 
-# import sys
+# import sys asd
 
 EMPTY_MARK = 'x'  # переменная с х
 MOVES = {'w': -4, 's': 4, 'a': -1, 'd': 1, }
