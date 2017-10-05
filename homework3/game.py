@@ -26,39 +26,37 @@ def shuffle_field():
 
 
 def print_field(number_field):
-    j = 0  # задаем цикл
-     # Задаем цикл где J меньше массива numbers_for games
-    while j < len(number_for_games): 
-        # Печатаем матрицу 4 на 4
+    j = 0 
+    while j < len(number_field): 
         print(number_field[j], number_field[j + 1], number_field[j + 2], number_field[j + 3])  
         j+=4
         
         
-def is_game_finished(number_for_games):  # игра закончена
+def is_game_finished(number_field):  # игра закончена
     # number_for_games.index('x')
-    # выйгрышная комбинация
     wins_checks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 'x'] 
-    # если массив равен выйграшной комбинации
-    if number_for_games == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 'x'] :  
+    if number_field == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 'x'] :  
         return  True  # возвращаем тру
-    elif number_for_games == wins_checks:  # Если иначе равен
+    elif number_field == wins_checks:  # Если иначе равен
         return True
     else:
         return False
     
     
-def perform_move(number_for_games,keys):
+def perform_move(fields,keys):
     move_key = MOVES[keys]
-    index = number_for_games.index('x')
+    index = fields.index('x')
     if ((index >= 0 and index < 4 and keys == 'w') or ((index % 4 == 0 or index == 0) and keys == 'a')):
         print('Выход за  границы')
     elif  (index >= 12 and index < 16 and keys == 's') or((index + 1) % 4 == 0 and keys == 'd'):
         print('Выход за боковые границы')
     else:
-         location = number_for_games.index('x')
+         location = fields.index('x')
          move_key = MOVES[keys]
-         number_for_games[location], number_for_games[location + move_key] = number_for_games[location + move_key],number_for_games[location]
-    return number_for_games
+         fields[location], fields[location + move_key] = fields[location + move_key], fields[location]
+    return fields
+
+
 def handle_user_input():
     moving = input('Введите значение:')
     if moving in MOVES or moving == 'cheat':
@@ -67,6 +65,8 @@ def handle_user_input():
         return moving
     else:
         return False
+    
+    
 def main():
     result_number = shuffle_field()
     print_field(result_number)
@@ -89,4 +89,6 @@ def main():
     while is_game_finished(result_number)==True:
         print('Поздравляем вы выиграли:')
         break
+        
+        
 main()
