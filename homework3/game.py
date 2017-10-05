@@ -65,7 +65,7 @@ def handle_user_input():
 def main():
     result_number = shuffle_field()
     print_field(result_number)
-    while is_game_finished(result_number) == False:
+    while is_game_finished(result_number) is False:
         try:
             handle = handle_user_input()
             if handle and handle != 'END' and handle != 'cheat':
@@ -85,7 +85,7 @@ def main():
         except KeyboardInterrupt:
             print('shutting down')
             print('shutting down')
-    while is_game_finished(result_number) == True:
+    while is_game_finished(result_number) is True:
         print('Поздравляем вы выиграли:')
         break
 
