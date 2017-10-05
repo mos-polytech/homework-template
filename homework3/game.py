@@ -5,14 +5,8 @@ import random
 # import sys
 
 EMPTY_MARK = 'x'  # переменная с х
-MOVES = {  # задаем движение
-'w': -4,
-    
-'s': 4,
-    
-'a': -1,
-    
-'d': 1,
+MOVES = { 
+'w': -4, 's': 4, 'a': -1, 'd': 1,
 }
 
 
@@ -29,11 +23,10 @@ def print_field(number_field):
     j = 0 
     while j < len(number_field): 
         print(number_field[j], number_field[j + 1], number_field[j + 2], number_field[j + 3])  
-        j+=4
+        j+=4      
         
         
 def is_game_finished(number_field):  # игра закончена
-    # number_for_games.index('x')
     wins_checks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 'x'] 
     if number_field == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 'x'] :  
         return  True  # возвращаем тру
