@@ -44,9 +44,9 @@ def perform_move(fields, keys):
     elif ((index + 1) % 4 == 0 and keys == 'd'):
         print('Выход за границы')
     else:
-         location = fields.index('x')
+         locat = fields.index('x')
          move_key = MOVES[keys]
-         fields[location], fields[location + move_key] = fields[location + move_key], fields[location]
+         fields[locat], fields[locat + move_key] = fields[locat + move_key], fields[locat]
     return fields
 
 
@@ -58,17 +58,15 @@ def handle_user_input():
         return moving
     else:
         return False
-    
-    
 def main():
     result_number = shuffle_field()
     print_field(result_number)
     while is_game_finished(result_number)==False:
         handle= handle_user_input()
-        if handle and handle !='END' and handle != 'cheat':
-            result_number = perform_move(result_number,handle)
+        if handle != 'END' and handle != 'cheat':
+            result_number = perform_move(result_number, handle)
             print_field(result_number)
-        elif handle=='END':
+        elif handle == 'END':
             print('shutting down')
             break
         elif handle == 'cheat':
