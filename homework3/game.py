@@ -4,17 +4,17 @@ import random
 
 # import sys
 
-EMPTY_MARK = 'x' # переменная с х
-MOVES = { # задаем движение
+EMPTY_MARK = 'x'  # переменная с х
+MOVES = {  # задаем движение
 'w' : -4,
 's' : 4,
 'a' :  -1,
 'd' : 1,
 }
 def shuffle_field():
-    number_for_games = [] #создаем массив
-    for i in range(1,16):# включаем цикл от 1 до 16
-        number_for_games.append(i) #добавляем  в конец массива
+    number_for_games = []  # создаем массив
+    for i in range(1,16):  # включаем цикл от 1 до 16
+        number_for_games.append(i)  # добавляем  в конец массива
     number_for_games.append(EMPTY_MARK) # добавляем в конец
     random.shuffle(number_for_games) # перемешиваем значения
     return number_for_games #возвращаем значени
