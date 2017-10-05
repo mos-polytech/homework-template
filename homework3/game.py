@@ -18,15 +18,13 @@ def shuffle_field():
 
 
 def print_field(fields):
-    j = 0 
-    while j < len(fields): 
+    j = 0
+    while j < len(fields):
         print(fields[j], fields[j + 1], fields[j + 2], fields[j + 3])
-        j + = 4
-        
-        
+        j += 4
 def is_game_finished(field):  # игра закончен
     wins_checks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 'x']
-    if field == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 'x']: 
+    if field == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 'x']:
         return True  # возвращаем тру
     elif field == wins_checks:  # Если иначе равен
         return True
