@@ -6,10 +6,10 @@ import random
 
 EMPTY_MARK = 'x'  # переменная с х
 MOVES = {  # задаем движение
-'w' : -4,
-'s' : 4,
-'a' :  -1,
-'d' : 1,
+'w':-4,
+'s':4,
+'a':-1,
+'d':1,
 }
 def shuffle_field():
     number_for_games = []  # создаем массив
