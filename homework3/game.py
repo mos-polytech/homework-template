@@ -66,24 +66,24 @@ def main():
     result_number = shuffle_field()
     print_field(result_number)
     while is_game_finished(result_number) is False:
-        handle = handle_user_input()
-        if handle and handle != 'END' and handle != 'cheat':
-            result_number = perform_move(result_number, handle)
-            print_field(result_number)
-        elif handle == 'END':
+        try:
+            handle= handle_user_input()
+            if handle and handle != 'END' and handle != 'cheat':
+                result_number = perform_move(result_number, handle)
+                print_field(result_number)
+            elif handle == 'END':
+                print('shutting down')
+                break
+            elif handle == 'cheat':
+                cheat = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 'x']
+                if(is_game_finished(cheat)):
+                    print('Вы воспользовались читом')
+                    print_field(cheat)
+                    break
+            else:
+                print('Неверные данные попробуйте еще раз:')
+        except KeyboardInterrupt:
             print('shutting down')
-            break
-        elif handle == 'cheat':
-            cheat = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 'x']
-        if(is_game_finished(cheat)):
-            print('Вы воспользовались читом')
-            print_field(cheat)
-            break
-        else:
-            print('Неверные данные попробуйте еще раз:')
-    while is_game_finished(result_number) is True:
-        print('Поздравляем вы выиграли:')
-        break
 
 
 main()
