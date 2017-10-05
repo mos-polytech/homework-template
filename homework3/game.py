@@ -33,7 +33,7 @@ def is_game_finished(field):  # игра закончен
     else:
         return False
 
-    
+
 def perform_move(fields, keys):
     key = MOVES[keys]
     index = fields.index('x')
@@ -47,7 +47,7 @@ def perform_move(fields, keys):
         print('Выход за границы')
     else:
          locat = fields.index('x')
-         move_key = MOVES[keys]
+         key = MOVES[keys]
          fields[locat], fields[locat + key] = fields[locat + key], fields[locat]
     return fields
 
@@ -83,5 +83,7 @@ def main():
             print('Неверные данные попробуйте еще раз:')
     while is_game_finished(result_number) == True:
         print('Поздравляем вы выиграли:')
-        break  
+        break
+
+
 main()
