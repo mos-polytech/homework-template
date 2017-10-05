@@ -23,7 +23,7 @@ def shuffle_field():
     :return: list with 16 randomly shuffled tiles,
     one of which is a empty space.
     """
-    field = [i for i in range(1, 16)] 
+    field = [i for i in range(1, 16)]
     field.append(EMPTY_MARK)
     random.shuffle(field)
 
