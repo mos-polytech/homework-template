@@ -6,29 +6,33 @@ import random
 
 EMPTY_MARK = 'x'  # переменная с х
 MOVES = {  # задаем движение
-'w':-4,
-'s':4,
-'a':-1,
-'d':1,
+'w': -4,
+'s': 4,
+'a': -1,
+'d': 1,
 }
+
+
 def shuffle_field():
     number_for_games = []  # создаем массив
-    for i in range(1,16):  # включаем цикл от 1 до 16
+    for i in range(1, 16):  # включаем цикл от 1 до 16
         number_for_games.append(i)  # добавляем  в конец массива
-    number_for_games.append(EMPTY_MARK) # добавляем в конец
-    random.shuffle(number_for_games) # перемешиваем значения
-    return number_for_games #возвращаем значени
+    number_for_games.append(EMPTY_MARK)  # добавляем в конец
+    random.shuffle(number_for_games)  # перемешиваем значения
+    return number_for_games  #возвращаем значени
+
+
 def print_field(number_for_games):
-    j = 0 # задаем цикл
-    while j<len(number_for_games): #Задаем цикл где J меньше массива numbers_for games
-        print(number_for_games[j],number_for_games[j+1],number_for_games[j+2],number_for_games[j+3]) #Печатаем матрицу 4 на 4
+    j = 0  # задаем цикл
+    while j<len(number_for_games):  # Задаем цикл где J меньше массива numbers_for games
+        print(number_for_games[j],number_for_games[j+1],number_for_games[j+2],number_for_games[j+3])  # Печатаем матрицу 4 на 4
         j+=4
-def is_game_finished(number_for_games): #игра закончена
+def is_game_finished(number_for_games):  # игра закончена
     # number_for_games.index('x')
-    wins_checks = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,'x'] # выйгрышная комбинация
-    if number_for_games == [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,'x'] : #  если массив равен выйграшной комбинации
-        return  True # возвращаем тру
-    elif number_for_games == wins_checks: # Если иначе равен
+    wins_checks = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,'x']  # выйгрышная комбинация
+    if number_for_games == [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,'x'] :  #  если массив равен выйграшной комбинации
+        return  True  # возвращаем тру
+    elif number_for_games == wins_checks:  # Если иначе равен
         return True
     else:
         return False
