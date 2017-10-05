@@ -46,9 +46,9 @@ def perform_move(fields, keys):
     elif ((index + 1) % 4 == 0 and keys == 'd'):
         print('Выход за границы')
     else:
-         locat = fields.index('x')
-         key = MOVES[keys]
-         fields[locat], fields[locat + key] = fields[locat + key], fields[locat]
+        locat = fields.index('x')
+        key = MOVES[keys]
+        fields[locat], fields[locat + key] = fields[locat + key], fields[locat]
     return fields
 
 
