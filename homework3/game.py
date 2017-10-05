@@ -22,6 +22,8 @@ def print_field(fields):
     while j < len(fields):
         print(fields[j], fields[j + 1], fields[j + 2], fields[j + 3])
         j += 4
+
+
 def is_game_finished(field):  # игра закончен
     wins_checks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 'x']
     if field == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 'x']:
@@ -30,10 +32,10 @@ def is_game_finished(field):  # игра закончен
         return True
     else:
         return False
-    
+
     
 def perform_move(fields, keys):
-    move_key = MOVES[keys]
+    key = MOVES[keys]
     index = fields.index('x')
     if (index >= 0 and index < 4 and keys == 'w'):
         print('Выход за  границы')
@@ -46,7 +48,7 @@ def perform_move(fields, keys):
     else:
          locat = fields.index('x')
          move_key = MOVES[keys]
-         fields[locat], fields[locat + move_key] = fields[locat + move_key], fields[locat]
+         fields[locat], fields[locat + key] = fields[locat + key], fields[locat]
     return fields
 
 
@@ -58,11 +60,13 @@ def handle_user_input():
         return moving
     else:
         return False
+
+
 def main():
     result_number = shuffle_field()
     print_field(result_number)
-    while is_game_finished(result_number)==False:
-        handle= handle_user_input()
+    while is_game_finished(result_number) == False:
+        handle = handle_user_input()
         if handle != 'END' and handle != 'cheat':
             result_number = perform_move(result_number, handle)
             print_field(result_number)
@@ -77,9 +81,7 @@ def main():
                 break
         else:
             print('Неверные данные попробуйте еще раз:')
-    while is_game_finished(result_number)==True:
+    while is_game_finished(result_number) == True:
         print('Поздравляем вы выиграли:')
-        break
-        
-        
+        break    
 main()
