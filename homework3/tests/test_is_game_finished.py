@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from homework3.game import EMPTY_MARK, is_game_finished
+from homework3.my_game import EMPTY_MARK, is_game_finished
 
 
 def test_finished_state():

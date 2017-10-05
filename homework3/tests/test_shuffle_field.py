@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from homework3.game import shuffle_field
+from homework3.my_game import shuffle_field
 
 
 def test_length():

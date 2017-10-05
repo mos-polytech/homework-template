@@ -2,8 +2,8 @@
 
 import contextlib
 
-from homework3 import game
-from homework3.game import handle_user_input
+from homework3 import my_game
+from homework3.my_game import handle_user_input
 
 
 @contextlib.contextmanager

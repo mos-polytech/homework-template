@@ -2,7 +2,7 @@
 
 import pytest
 
-from homework3.game import EMPTY_MARK, perform_move
+from homework3.my_game import EMPTY_MARK, perform_move
 
 left_down_corner_index = 12
 right_up_corner_index = 3
