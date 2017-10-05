@@ -67,11 +67,11 @@ def main():
     print_field(result_number)
     while is_game_finished(result_number) == False:
         try:
-            handle= handle_user_input()
-            if handle and handle !='END' and handle != 'cheat':
-                result_number = perform_move(result_number,handle)
+            handle = handle_user_input()
+            if handle and handle != 'END' and handle != 'cheat':
+                result_number = perform_move(result_number, handle)
                 print_field(result_number)
-            elif handle=='END':
+            elif handle == 'END':
                 print('shutting down')
                 break
             elif handle == 'cheat':
