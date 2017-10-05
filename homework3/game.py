@@ -19,13 +19,15 @@ def shuffle_field():
         number_for_games.append(i)  # добавляем  в конец массива
     number_for_games.append(EMPTY_MARK)  # добавляем в конец
     random.shuffle(number_for_games)  # перемешиваем значения
-    return number_for_games  #возвращаем значени
+    return number_for_games  # возвращаем значени
 
 
 def print_field(number_for_games):
     j = 0  # задаем цикл
-    while j<len(number_for_games):  # Задаем цикл где J меньше массива numbers_for games
-        print(number_for_games[j],number_for_games[j+1],number_for_games[j+2],number_for_games[j+3])  # Печатаем матрицу 4 на 4
+     # Задаем цикл где J меньше массива numbers_for games
+    while j < len(number_for_games): 
+        # Печатаем матрицу 4 на 4
+        print(number_for_games[j], number_for_games[j + 1], number_for_games[j + 2], number_for_games[j + 3])  
         j+=4
 def is_game_finished(number_for_games):  # игра закончена
     # number_for_games.index('x')
