@@ -2,7 +2,7 @@
 
 ## Name
 
-Elizaveta Lazbancova
+Elizaveta Lazbanicova
 
 
 ## Link
