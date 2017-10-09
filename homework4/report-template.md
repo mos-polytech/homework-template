@@ -7,9 +7,9 @@ Elizaveta Lazbanicova
 
 ## Link
 
-[My profile link](https://codefights.com/profile/sobolevn1/stats).
+[My profile link](https://codefights.com/profile/elizavetalazb/stats).
 
 
 ## Screenshot
 
-![codefights](https://pp.userapi.com/c837121/v837121356/60b5b/p4QRGX1Psps.jpg)
+![codefights](https://github.com/Elizaveta1997/homework-template/blob/feature-homework-4/screen.PNG)
