@@ -1,15 +1,15 @@
-# Homework4
+# Homework 4
 
 ## Name
 
-Nikita Sobolev
+Nikita Vasilyev
 
 
 ## Link
 
-My profile [link](https://codefights.com/profile/sobolevn1/stats).
+My profile [link](https://codefights.com/profile/nikitavasilyev/stats)
 
 
 ## Screenshot
 
-![codefights](https://raw.githubusercontent.com/mos-polytech/2017/master/media/codefights.png)
+![codefights](https://image.prntscr.com/image/6emrCzEAQiGIIE12dvGkOQ.jpeg)
