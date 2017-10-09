@@ -7,7 +7,7 @@ Nikita Vasilyev
 
 ## Link
 
-My profile [link](https://codefights.com/profile/nikitavasilyev/stats.
+My profile [link](https://codefights.com/profile/nikitavasilyev/stats)
 
 
 ## Screenshot
