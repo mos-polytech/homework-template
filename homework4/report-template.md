@@ -12,4 +12,4 @@ My profile [link](https://codefights.com/profile/reginaray/stats).
 
 ## Screenshot
 
-![codefights](https://raw.githubusercontent.com/mos-polytech/2017/master/media/codefights.png)
+![codefights](https://github.com/ReginaRay/homework-template/blob/feature-homework-4/Screenshot_1.png)
