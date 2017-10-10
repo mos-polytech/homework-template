@@ -12,4 +12,4 @@ My profile [link](https://codefights.com/profile/daryazvyagina/stats).
 
 ## Screenshot
 
-![codefights](https://raw.githubusercontent.com/mos-polytech/2017/master/media/codefights.png)
+![codefights](https://github.com/DaryaZvyagina/homework-template/blob/feature-homework-4/screen.PNG)
