@@ -2,14 +2,14 @@
 
 ## Name
 
-Nikita Sobolev
+Yanovich Anastasia
 
 
 ## Link
 
-My profile [link](https://codefights.com/profile/sobolevn1/stats).
+My profile [link](https://codefights.com/profile/yanovich_anasta/stats).
 
 
 ## Screenshot
 
-![codefights](https://raw.githubusercontent.com/mos-polytech/2017/master/media/codefights.png)
+![codefights](https://pp.userapi.com/c837237/v837237108/5be0a/iyxCMjWrzV0.jpg)
