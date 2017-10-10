@@ -7,7 +7,7 @@ Darya Zvyagina
 
 ## Link
 
-My profile [link](https://codefights.com/profile/daryazvyagina/stats).
+My profile [link](https://codefights.com/profile/daryazvyagina/stats) .
 
 
 ## Screenshot
