@@ -80,6 +80,7 @@ class ExitCommand(BaseCommand):
     def perform(self, _store):
         raise UserExitException('See you next time!')
 
+
 class DoneCommand(BaseCommand):
     @property
     def label(self) -> str:

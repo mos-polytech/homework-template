@@ -44,7 +44,7 @@ class ToDoItem(BaseItem):
             done = '+'
         else:
             done = '-'
-        return 'ToDo: {}'.format(done, self.heading)
+        return '{} ToDo: {}'.format(done, self.heading)
 
     @classmethod
     def construct(cls):
@@ -62,7 +62,7 @@ class ToBuyItem(BaseItem):
             done = '+'
         else:
             done = '-'
-        return 'ToBuy: {} for {}'.format(
+        return '{} ToBuy: {} for {}'.format(
             done,
             self.heading,
             self.price,
@@ -73,6 +73,7 @@ class ToBuyItem(BaseItem):
         heading = input('Input heading: ')
         price = input('Input price: ')
         return cls(heading, price)
+
 
 class ToReadItem(BaseItem):
     def __init__(self, heading, url):
