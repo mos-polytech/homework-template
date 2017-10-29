@@ -19,6 +19,5 @@ xenon = "*"
 radon = "*"
 "flake8-bugbear" = "*"
 "flake8-comprehensions" = "*"
-"flake8-pep3101" = "*"
 
 [packages]
