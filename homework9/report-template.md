@@ -1,4 +1,4 @@
-# Homework4
+# Homework9
 
 ## Name
 
@@ -12,4 +12,4 @@ My profile [link](https://codefights.com/profile/nerkeskulbae/stats).
 
 ## Screenshot
 
-![codefights]
+![codefights] (https://github.com/nerkeskulbaeva/homework-template/blob/feature-homework-9/screen.jpg)
